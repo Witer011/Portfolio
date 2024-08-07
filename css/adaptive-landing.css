@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color1: #fff;
+    --color2: #eaeaea;
+    --color3: gray;
+    --color4: #000;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 60px;
+    font-weight:bolder;
+    color: var(--color3);
+}
+.description {
+    margin: 20px 0;
+}
+
+.container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.img-summary{
+    position: relative;
+    max-width: 100%;
+    margin: 0 10px 20px 10px;
+    margin-bottom: 20px;
+
+    color: transparent;
+}
+
+
+.link-button{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+
+    padding: 10px;
+    border: 2px solid var(--color1);
+    border-radius: 30px;
+
+    background-color: var(--color3);
+    color: var(--color1);
+
+    transition: all .5s;
+}
+.link-button:hover{
+    background-color: var(--color2);
+    color: var(--color3);
+}
+
+
+.img-summary-preview{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color2);
+}
+.img-summary-preview img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--color3);
+}
+
+
+.img-summary > div{
+    background-color: var(--color2);
+    margin: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .img-summary div > img{
+    height: 50vh;
+} */
+.imgs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 0 15px;
+
+    box-shadow: 0 0 15px var(--color3);
+    border-radius: 10px;
+}
+.imgs img{
+    margin: 5px;
+    width: 100%;
+}
+.tablets img {
+    width: calc(50% - 10px);
+}
+.phones img {
+    width: calc(100% / 3 - 10px);
+}
+.img-summary p{
+    color: var(--color4);
+    text-align: center;
+    font-weight: bolder;
+
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.img-summary div:last-child{
+    border-radius: 0 0 10px 10px;
+}
+
+
+.footer-btn {
+    display: block;
+    margin-top: 80px;
+    padding: 10px;
+
+    text-align: center;
+    color: var(--color4);
+    font-size: 28px;
+
+    background: linear-gradient(to left, var(--color3), transparent, var(--color3));
+
+    transition: all 0.8s;
+}
+.footer-btn:hover {
+    color: var(--color1);
+    background-color: var(--color3);
+}

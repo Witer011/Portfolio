@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color1: #fff;
+    --color2: #81a16b;
+    --color3: #E5E4E2;
+    --color4: #9C9C9C;
+    --color5: #525350;
+}
+
+body {
+    background-color: var(--color1);
+    color: var(--color5);
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    overflow: hidden;
+}
+body a {
+    color: var(--color5);
+}
+
+
+/*---------------HEADER---------------*/
+header {
+    display: flex;
+    align-items: center;
+
+    margin: 40px 40px 10px 40px;
+
+    text-transform: uppercase;
+}
+header a {
+    padding: 15px 10px;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+header a:hover{
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+header .logo {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.current-page {
+    border-bottom: 1px var(--color5) solid ;
+}
+/*---------------//HEADER---------------*/
+
+.container {
+    height: calc(100vh - 140px);
+    margin: 0 auto;
+    max-width: 1170px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: right;
+    padding-left: 40%;
+    padding-right: 40px;
+
+
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--color2);
+}
+
+/*---------------CARDS---------------*/
+
+.card-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    color: var(--color4);
+}
+
+/*************************/
+.card::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    content: '';
+    background-image: url(../img/online-store/card-background.jpg);
+    z-index: -2;
+    border-radius: 30px;
+}
+.card::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    content: '';
+    background: linear-gradient(to top, var(--color2) 50%, transparent);
+    z-index: -1;
+    border-radius: 30px;
+}
+/*************************/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+    width: 235px;
+    height: 320px;
+    position: relative;
+
+    border-radius: 30px;
+    border: 2px solid var(--color3);
+    padding: 20px;
+
+    background-color: var(--color3);
+    transition: all 1s;
+}
+.card:hover {
+    background-color:  transparent;
+    color: var(--color3);
+    /* border: none; */
+
+    width: 280px;
+    margin-bottom: 50px;
+}
+.card img {
+    position: absolute;
+    bottom: 70%;
+    width: 300px;
+}
+.card h2 {
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+/* .card p {
+    color: var(--color4);
+} */
+
+/*---------------//CARDS---------------*/
+
+.circle {
+    position: absolute;
+    top: -5%;
+    right: 30%;
+
+    width: 700px;
+    height: 700px;
+
+    border-radius: 50%;
+    background-color: #849A74;
+    opacity: 0.3;
+
+    z-index: -10;
+}

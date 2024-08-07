@@ -1,0 +1,219 @@
+@media (max-width: 1140px) {
+    .section1 {
+        position: relative;
+    }
+
+    .section1 img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        width: 540px;
+
+        filter: opacity(40%);
+    }
+    
+
+    .card-inner {
+        display: block;
+    }
+    .section2 {
+        height: 791px; /* =card-inner */
+    }
+
+    .card-inner > * {
+        margin-bottom: 35px;
+    }
+
+
+    .slider-inner {
+        width: 700px;
+    }
+    .slider .center {
+        right: calc((350px - 124px) / 2); /* (width-primaryWidth)/2 */
+    }
+    
+
+    .form-inner {
+        padding: 40px 104px 0px 35px;
+    }
+
+    .input {
+        width: 248px;
+    }
+
+    select {
+        width: 280px;
+        padding-left: 0px;
+    }
+    
+    textarea {
+        width: 248px;
+    }   
+    
+    .form-inner label {
+        width: 200px;
+    }
+}
+
+@media (max-width: 760px) {
+
+    /* =====================NAV-TOP===================== */
+
+    .nav-top {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-list {
+        width: 310px;
+    }
+
+    .nav-list li a{
+        padding: 40px 5px;
+        font-size: 13px;
+    }
+
+    .nav-list button {
+        position: absolute;
+        right: calc(50% - 136px / 2);
+        top: 128px;
+    }
+
+    /* =====================SECTION1===================== */
+
+    .block1-2 h1 {
+        width: 300px;
+        margin-bottom: 30px;
+
+        font-size: 36px;
+    }
+
+    .section1 img {
+        width: 300px;
+        height: 161px;
+        filter: opacity(25%);
+    }
+
+    /* =====================SECTION2===================== */
+
+    .section2 {
+        height: 918px; /* =title+card-inner */
+    }
+
+    .card-inner h3 {
+        font-size: 22px;
+    }
+    
+    .card-inner p {
+        width: 180px;
+        line-height: 1;
+        padding-top: 10px;
+    }
+
+    .card1::before, .card2::before, .card3::before, .card4::before {
+        width: 88px;
+        height: 100px;
+        background-size: 88px 100px;
+
+        top: 30px;
+    }
+
+    .card1::before, .card3::before {
+        left: -44px; /* width/2 */
+    }
+
+    .card1, .card3 {
+        padding: 20px 40px 20px 50px;
+        margin-left: 40px;
+    }
+
+    .card2::before, .card4::before {
+        right: -44px; /* width/2 */
+    }
+
+    .card2, .card4 {
+        padding: 20px 50px 20px 40px;
+        margin-right: 40px;
+    }
+
+    /* =====================SECTION3===================== */
+
+    .section3 {
+        background-image: none;
+        height: calc(150px + 700px); /* h2 + .stages*/
+    }
+
+    .dots::before, .dots::after {
+        display: none;
+    }
+
+    .stages {
+        height: 700px;
+
+        padding: 0 15px;
+    }
+    .stages div {
+        padding: 10px 15px;
+    }
+    .stages div:nth-child(2n) {
+        align-self:auto;
+    }
+    .stages div:first-child, .stages div:nth-child(5) {
+        left: 0px;
+    }
+
+    /* =====================SECTION4===================== */
+
+    .slider-inner {
+        width: 290px;
+        margin: 0 auto;
+    }
+    
+    .slider .center .slided__item {
+        /* width: 225px; */
+        width: 180px;
+        height: 126px;
+    
+        transition: all .8s;
+    }
+    .slider .center {
+        top: 57px;
+        right: calc((180px - 42px) / 2); /* (width-primaryWidth)/2 */
+    }
+    
+    .slider_btn {
+        top: calc(50% - 50px / 2); /* 50%-widht/2 */
+        font-size: 20px;
+        width: 20px;
+    }
+
+    /* =====================SECTION5 (Contact)===================== */  
+    
+    .form-inner {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .contact-1-2 {
+        flex-direction: column;
+    }
+
+    .contact1{
+        width: 100%;
+        border: none;
+    }
+
+    .contact2{
+        width: 100%;
+    }
+
+    .contact-img {
+        display: none;
+    }
+
+    .form-heading {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}
